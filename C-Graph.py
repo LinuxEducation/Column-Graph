@@ -47,8 +47,8 @@ class App(Tk):
 
     def insert_app_title(self):
         '''Graph Frame'''
-        self.app_grap = AppFrame(self, YES)
-        self.graph_title = Label(self.app_grap, text='GRAPH', font=('Havletica', 22, 'bold'), bg='#424242')
+        self.app_graph = AppFrame(self, YES)
+        self.graph_title = Label(self.app_graph, text='GRAPH', font=('Havletica', 22, 'bold'), bg='#424242')
         self.graph_title.pack(expand=YES)
         '''Data Frame'''
         self.app_data = AppFrame(self, YES)
@@ -89,7 +89,7 @@ class App(Tk):
 
         '''create a centered frame'''
         self.graph_title.destroy()
-        center_frame = Frame(self.app_grap, bg='#424242')
+        center_frame = Frame(self.app_graph, bg='#424242')
         center_frame.pack(expand=True)
         self.cache_graph_list.append(center_frame)
 
