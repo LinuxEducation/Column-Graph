@@ -1,5 +1,4 @@
 from tkinter import Tk, YES
-from tkinter import filedialog
 from tkinter import messagebox
 
 from UIwidgets import *
